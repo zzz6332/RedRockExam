@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <ImageView
+
+        android:id="@+id/iv_small_play"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_play_blue" />
+
+    <ImageView
+        android:id="@+id/iv_small_dots"
+        android:layout_width="26dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="36dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guideline27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_dots" />
+
+    <TextView
+        android:id="@+id/tv_play_song_small_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Song"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline27"
+        app:layout_constraintStart_toStartOf="@+id/guideline28" />
+
+    <TextView
+        android:id="@+id/tv_play_song_small_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="singer"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline28"
+        app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="322dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

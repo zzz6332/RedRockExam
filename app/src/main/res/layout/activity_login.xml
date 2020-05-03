@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_app"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/ic_wangyi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_round_rect"
+        android:hint="请输入用户名"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_app" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_round_rect"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_user_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_user_name" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Forgot your password?"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <com.example.exam.view.myview.LoginButton
+        android:id="@+id/btn_login"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        app:color="@color/colorLoginRed"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:text="登陆"
+        app:textSize="50" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="494dp" />
+
+    <TextView
+        android:layout_width="416dp"
+        android:layout_height="247dp"
+        android:background="@color/colorLoginBottomBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign with a social account"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/btn_login_facebook"
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_login_facebook"
+        android:drawableLeft="@drawable/ic_login_facebook_pic"
+        android:paddingLeft="15dp"
+        android:text="Login with Facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btn_login_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_login_twiter"
+        android:drawableLeft="@drawable/ic_login_twitter_pic"
+        android:paddingLeft="15dp"
+        android:text="Login with Twitter"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_facebook" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

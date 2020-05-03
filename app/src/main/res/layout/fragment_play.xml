@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_play_pic"
+        android:layout_width="465dp"
+        android:layout_height="423dp"
+        android:layout_marginTop="24dp"
+
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guideline30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223"
+        app:srcCompat="@drawable/ic_place_holder" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="391dp" />
+
+    <ImageView
+        android:id="@+id/iv_play_play"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline31"
+        app:layout_constraintTop_toBottomOf="@+id/iv_play_pic"
+        app:srcCompat="@drawable/ic_play_blue" />
+
+    <ImageView
+        android:id="@+id/iv_play_last"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_play_play"
+        app:layout_constraintTop_toBottomOf="@+id/iv_play_pic"
+        app:srcCompat="@drawable/ic_rewind_black" />
+
+    <ImageView
+        android:id="@+id/iv_play_oreded"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_play_last"
+        app:layout_constraintTop_toBottomOf="@+id/iv_play_pic"
+        app:srcCompat="@drawable/ic_shaffle" />
+
+    <ImageView
+        android:id="@+id/iv_play_next"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_play_play"
+        app:layout_constraintTop_toBottomOf="@+id/iv_play_pic"
+        app:srcCompat="@drawable/ic_reewind_black" />
+
+    <ImageView
+        android:id="@+id/iv_play_repeat"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_play_next"
+        app:layout_constraintTop_toBottomOf="@+id/iv_play_pic"
+        app:srcCompat="@drawable/ic_repeat" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seek_bar_play"
+        android:layout_width="0dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_play_play" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
