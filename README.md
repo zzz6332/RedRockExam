@@ -29,6 +29,8 @@
 
 ![5](https://github.com/zzz6332/RedrockExam/blob/master/Pic/5.gif)
 
+## 已知的问题：适配没做好..
+
 ## 二.使用到的比较重要的知识点
 1.MVVM框架.不知道我这个算不算MVVM..理解到了有了架构逻辑更清楚，activity里的代码更少了。因为是第一次用mvvm写这么大的程序，所以中途有了好多bug,改的时间有点久然后还是有bug，所以功能没做多少T T
 
